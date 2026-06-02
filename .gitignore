@@ -1,0 +1,5 @@
+pkg/
+src/
+*.pkg.tar*
+*.src.tar*
+scanner-driver-avision_deb64_*.tar.gz

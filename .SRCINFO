@@ -1,0 +1,29 @@
+pkgbase = scanner-driver-avision
+	pkgdesc = SANE backend for Avision scanners (FB5100 and others), repackaged from Avision's .deb
+	pkgver = 0.1.0.26090
+	pkgrel = 1
+	url = https://www.avision.com/en/shop/flatbed-scanner/fb5100/#tab-downloads
+	arch = x86_64
+	license = custom
+	depends = sane
+	depends = libusb
+	depends = libusb-compat
+	depends = libstdc++
+	depends = libgcc
+	depends = libgomp
+	provides = sane-backend-avision-adv
+	noextract = scanner-driver-avision_deb64_0.1.0.26090_20260331.tar.gz
+	options = !strip
+	backup = etc/sane.d/DeviceList.conf
+	backup = etc/sane.d/OptDefault_avision_adv.ini
+	backup = etc/sane.d/OptSetAuto_avision_adv.ini
+	backup = etc/sane.d/ScaleImage_avision_adv.ini
+	backup = etc/sane.d/avision_adv_en-us.lang
+	backup = etc/sane.d/avision_adv_zh-cn.lang
+	backup = etc/sane.d/avision_adv_zh-tw.lang
+	backup = etc/sane.d/dll.d/avision_adv
+	backup = etc/udev/rules.d/99-avision_sane.rules
+	source = scanner-driver-avision_deb64_0.1.0.26090_20260331.tar.gz::https://www.dropbox.com/scl/fi/7veh5qvegiqji0eerrobn/scanner-driver-avision_deb64_0.1.0.26090_20260331.tar.gz?rlkey=0s4w2zb7senh7307qyi13e5q8&dl=1
+	sha256sums = 26a8271f1b96f0d7f79d90408f485fbd2f80de01751b0255cc24e700bc265677
+
+pkgname = scanner-driver-avision
